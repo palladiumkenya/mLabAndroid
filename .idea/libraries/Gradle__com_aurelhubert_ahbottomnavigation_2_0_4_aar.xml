@@ -6,6 +6,7 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b0dd8f55c008978a5cca48c268a8af25/jetified-ahbottomnavigation-2.0.4/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/110c5ab452c9e2f4222f839a783f6f72/jetified-ahbottomnavigation-2.0.4/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84a25e8c7e0052cdd78acfca11687000/jetified-ahbottomnavigation-2.0.4/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/080c97065a874a7a5c8db49391551e45/jetified-ahbottomnavigation-2.0.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/transforms-2/files-2.1/42f8722ff3d04c124e977926008784a7/jetified-ahbottomnavigation-2.0.4/jars/classes.jar!/" />
@@ -23,6 +24,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84a25e8c7e0052cdd78acfca11687000/jetified-ahbottomnavigation-2.0.4/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84a25e8c7e0052cdd78acfca11687000/jetified-ahbottomnavigation-2.0.4/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84a25e8c7e0052cdd78acfca11687000/jetified-ahbottomnavigation-2.0.4/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/080c97065a874a7a5c8db49391551e45/jetified-ahbottomnavigation-2.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/080c97065a874a7a5c8db49391551e45/jetified-ahbottomnavigation-2.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/080c97065a874a7a5c8db49391551e45/jetified-ahbottomnavigation-2.0.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/modules-2/files-2.1/com.aurelhubert/ahbottomnavigation/2.0.4/8260129a2f3ea9b1350dfc7ea5b6595f7840da4c/ahbottomnavigation-2.0.4-javadoc.jar!/" />
