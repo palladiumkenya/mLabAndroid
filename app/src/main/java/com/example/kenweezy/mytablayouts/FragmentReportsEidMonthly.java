@@ -94,7 +94,8 @@ public class FragmentReportsEidMonthly extends Fragment {
         BarDataSet barDataSet2 = new BarDataSet(bgrp2(), "Positive");
         barDataSet2.setColor(Color.rgb(20, 10, 60));
 
-        BarDataSet barDataSet3 = new BarDataSet(bgrp3(), "Invalid");
+       // BarDataSet barDataSet3 = new BarDataSet(bgrp3(), "Invalid");
+        BarDataSet barDataSet3 = new BarDataSet(bgrp3(), "Rejected");
         barDataSet3.setColor(Color.rgb(255, 0, 0));
 
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();  // combined all dataset into an arraylist

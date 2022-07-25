@@ -106,7 +106,9 @@ public class FragmentVlInvalid extends Fragment {
                 mychkB=false;
             }
 
-            if((messbdy.contains("Collect New Sample")||messbdy.contains("Collect new sexample")||messbdy.contains("Invalid")||messbdy.contains("Failed"))){
+                //if((messbdy.contains("Collect New Sample")||messbdy.contains("Collect new sexample")||messbdy.contains("Invalid")||messbdy.contains("Failed"))){
+
+                if((messbdy.contains("Collect New Sample")||messbdy.contains("Collect new sexample")||messbdy.contains("Rejected")||messbdy.contains("Failed"))){
 
 
 

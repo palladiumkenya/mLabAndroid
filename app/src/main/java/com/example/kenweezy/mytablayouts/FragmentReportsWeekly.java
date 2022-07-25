@@ -75,7 +75,8 @@ public class FragmentReportsWeekly extends Fragment {
 // creating dataset for Bar Group 2
         BarDataSet barDataSet2 = new BarDataSet(getGroup2(), "Unsuppressed");
         barDataSet2.setColor(Color.rgb(0, 10, 60));
-        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Invalid");
+       // BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Invalid");
+        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Rejected");
         barDataSet2.setColor(Color.rgb(255, 0, 0));
 
 
@@ -423,7 +424,8 @@ public class FragmentReportsWeekly extends Fragment {
 
 
 
-                if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+               // if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+                if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Rejected"))){
 
 
 
@@ -663,7 +665,8 @@ public class FragmentReportsWeekly extends Fragment {
                 String stw = new String(mystrbdy);
                 String mydate=ms.getmTimeStamp();
 
-                if((mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+                //if((mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+                    if((mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Rejected"))){
 
                     String[] checkSplitdate=mydate.split("/");
 
@@ -850,7 +853,8 @@ public class FragmentReportsWeekly extends Fragment {
                 String stw = new String(mystrbdy);
                 String mydate=ms.getmTimeStamp();
 
-                if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+                //if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Invalid"))){
+                if(!(mystrbdy.contains("Collect New Sample")||mystrbdy.contains("Rejected"))){
 
 
 

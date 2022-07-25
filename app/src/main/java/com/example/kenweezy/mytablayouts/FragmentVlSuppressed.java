@@ -114,7 +114,8 @@ public class FragmentVlSuppressed extends Fragment {
 
                 String mytimestamp = null;
 
-                if (!(messbdy.contains("Collect New Sample") || messbdy.contains("Collect new sexample") || messbdy.contains("Invalid") || messbdy.contains("Failed"))) {
+                   //if (!(messbdy.contains("Collect New Sample") || messbdy.contains("Collect new sexample") || messbdy.contains("Invalid") || messbdy.contains("Failed"))) {
+                    if (!(messbdy.contains("Collect New Sample") || messbdy.contains("Collect new sexample") || messbdy.contains("Rejected") || messbdy.contains("Failed"))) {
 
                     String[] checkSplitdate = ndate.split("/");
 

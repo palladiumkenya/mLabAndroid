@@ -2,6 +2,7 @@
 <network-security-config>
 
     <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true"> mlab.kenyahmis.org</domain>
         <domain includeSubdomains="true">mlab.mhealthkenya.co.ke</domain>
         <domain includeSubdomains="true">api.mhealthkenya.co.ke</domain>
         <domain includeSubdomains="true">mhealthkenya.co.ke</domain>

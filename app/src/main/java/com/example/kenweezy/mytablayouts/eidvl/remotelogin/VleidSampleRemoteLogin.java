@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.kenweezy.mytablayouts.Config.Config;
+import com.example.kenweezy.mytablayouts.HttpsTrustManager;
 import com.example.kenweezy.mytablayouts.R;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.CheckRejectedSamples;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.EidSamples;
@@ -37,6 +38,7 @@ public class VleidSampleRemoteLogin extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vleid_sample_remote_login);
+        HttpsTrustManager.allowAllSSL();
         setToolBar();
         changeStatusBarColor("#3F51B5");
         initialise();

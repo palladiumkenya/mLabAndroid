@@ -131,7 +131,8 @@ public class FragmentReportsYearly extends Fragment {
         BarDataSet barDataSet2 = new BarDataSet(getGroup2(), "Unsuppressed");
         barDataSet2.setColor(Color.rgb(0, 10, 60));
 
-        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Invalid");
+        //BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Invalid");
+        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Rejected");
         barDataSet2.setColor(Color.rgb(255, 0, 0));
 
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();  // combined all dataset into an arraylist

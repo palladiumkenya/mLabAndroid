@@ -726,11 +726,13 @@ public class MainActivity extends AppCompatActivity implements SmsReceiver.Messa
 
         AHBottomNavigationItem eidNegative = new AHBottomNavigationItem("Negative", R.mipmap.reorder, R.color.colorPrimary);
         AHBottomNavigationItem eidPos = new AHBottomNavigationItem("Positive", R.mipmap.reorder, R.color.colorAccent);
-        AHBottomNavigationItem eidInv = new AHBottomNavigationItem("Invalid EID", R.mipmap.reorder, R.color.colorAccent);
+        //AHBottomNavigationItem eidInv = new AHBottomNavigationItem("Invalid EID", R.mipmap.reorder, R.color.colorAccent);
+        AHBottomNavigationItem eidInv = new AHBottomNavigationItem("Rejected EID", R.mipmap.reorder, R.color.colorAccent);
 
         AHBottomNavigationItem vlSuppressed = new AHBottomNavigationItem("Suppressed", R.mipmap.reorder, R.color.colorPrimary);
         AHBottomNavigationItem vlUnsuppressed = new AHBottomNavigationItem("UnSuppressed", R.mipmap.reorder, R.color.colorAccent);
-        AHBottomNavigationItem vlInvalid = new AHBottomNavigationItem("Invalid", R.mipmap.reorder, R.color.colorPrimary);
+        //AHBottomNavigationItem vlInvalid = new AHBottomNavigationItem("Invalid", R.mipmap.reorder, R.color.colorPrimary);
+        AHBottomNavigationItem vlInvalid = new AHBottomNavigationItem("Rejected", R.mipmap.reorder, R.color.colorPrimary);
 
         AHBottomNavigationItem rmonthly = new AHBottomNavigationItem("Monthly", R.mipmap.reorder, R.color.colorPrimary);
 //        AHBottomNavigationItem rweekly = new AHBottomNavigationItem("Weekly", R.mipmap.reorder, R.color.colorAccent);
@@ -1031,10 +1033,14 @@ public class MainActivity extends AppCompatActivity implements SmsReceiver.Messa
 
                     case 2:
 
-                        if (bottomNavigation.getItem(2).getTitle(getApplicationContext()).toString() == "Invalid") {
+                        //if (bottomNavigation.getItem(2).getTitle(getApplicationContext()).toString() == "Invalid") {
+
+                            if (bottomNavigation.getItem(2).getTitle(getApplicationContext()).toString() == "Rejected") {
 
                             pr.DissmissProgress();
-                            pr.progressing(MainActivity.this, "loading..", "Getting VL invalid Results");
+                            //pr.progressing(MainActivity.this, "loading..", "Getting VL invalid Results");
+
+                                pr.progressing(MainActivity.this, "loading..", "Getting VL rejected Results");
                             Handler mHand = new Handler();
                             mHand.postDelayed(new Runnable() {
 
@@ -1054,7 +1060,8 @@ public class MainActivity extends AppCompatActivity implements SmsReceiver.Messa
                         } else {
 
                             pr.DissmissProgress();
-                            pr.progressing(MainActivity.this, "loading..", "Getting EID Invalid Results");
+                           // pr.progressing(MainActivity.this, "loading..", "Getting EID Invalid Results");
+                                pr.progressing(MainActivity.this, "loading..", "Getting EID Rejected Results");
                             Handler mHand = new Handler();
                             mHand.postDelayed(new Runnable() {
 

@@ -1,11 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/activity_main.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/check_rejected_samples.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/client_individual_results.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/client_options.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/content_main.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/custom_tab.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/device_list.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/device_name.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/eidvl_options.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragment_sample_delivered.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentallall.xml" value="0.25" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmenteidall.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmenteidinvalid.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmenteidsuppressed.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentreportseidmonthly.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentreportseidyearly.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentreportsmonthly.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentreportsyearly.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentvlall.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentvlinvalid.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/fragmentvlsuppressed.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/hts_options.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/listviewtestingrows.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/main.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/mylogin.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/myregister.xml" value="0.22" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/options.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/register.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/reportsfragment.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/reportsfragmenteid.xml" value="0.146875" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/sample_transportation.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/sample_transportation_status.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/samplelogin.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/select_batch.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/settings.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/vleid_sample_remote_login.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/vleid_sample_remote_login_eid.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/layout/vleid_sample_remote_login_viralloadsamples.xml" value="0.1" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/menu/fragmenu.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/menu/menu_main.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/This/AndroidStudioProjects/mLabAndroid/app/src/main/res/xml/mysettings.xml" value="0.16304347826086957" />
+      </map>
+    </option>
+  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
     <option name="myNullables">
       <value>
-        <list size="12">
+        <list size="13">
           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
@@ -18,12 +65,13 @@
           <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
           <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
           <item index="11" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="12" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
         </list>
       </value>
     </option>
     <option name="myNotNulls">
       <value>
-        <list size="11">
+        <list size="12">
           <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
           <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
           <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
@@ -35,6 +83,7 @@
           <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
           <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
           <item index="10" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="11" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
         </list>
       </value>
     </option>

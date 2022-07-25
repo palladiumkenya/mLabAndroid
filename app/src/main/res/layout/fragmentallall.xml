@@ -21,9 +21,11 @@
                 android:layout_width="match_parent"
                 android:text="FILTER RESULTS BY DATE"
                 android:layout_weight="1"
+                android:layout_marginLeft="2dp"
                 android:layout_marginTop="5sp"
+                android:textColor="@color/darkblue"
                 android:layout_gravity="center"
-                android:gravity="center"
+
                 android:layout_height="wrap_content" />
 
             <LinearLayout
@@ -69,7 +71,9 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Show All Results"
+                android:textColor="@color/white"
                 android:id="@+id/allres"
+                android:background="@color/darkblue"
                 android:layout_height="wrap_content" />
 
             <!--<Button-->

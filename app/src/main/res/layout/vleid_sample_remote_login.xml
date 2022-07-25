@@ -103,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
             android:background="@color/darkblue"
+            android:visibility="gone"
             android:onClick="goToCheckRejectedSamples"
             android:text="Check Rejected Samples"
             android:textColor="@color/white" />
@@ -117,6 +118,7 @@
         android:background="@color/darkblue"
         android:textColor="@color/white"
         android:onClick="goToBarcodeReader"
+                android:visibility="gone"
         android:layout_height="wrap_content" />
         </LinearLayout>
 

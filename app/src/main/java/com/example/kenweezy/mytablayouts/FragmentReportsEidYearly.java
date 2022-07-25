@@ -135,7 +135,7 @@ public class FragmentReportsEidYearly extends Fragment {
         BarDataSet barDataSet2 = new BarDataSet(getGroup2(), "Positive");
         barDataSet2.setColor(Color.rgb(0, 10, 60));
 
-        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Invalid");
+        BarDataSet barDataSet3 = new BarDataSet(getGroup3(), "Rejected");
         barDataSet3.setColor(Color.rgb(255, 0, 0));
 
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();  // combined all dataset into an arraylist
@@ -520,7 +520,8 @@ public class FragmentReportsEidYearly extends Fragment {
 
                 String mymnth = mnthformat.format(calendar.getTime());
 
-                if (stw.contains("FFEID") && stw.contains("Invalid") && mnth.contentEquals(mymnth)) {
+                   //if (stw.contains("FFEID") && stw.contains("Rejected") && mnth.contentEquals(mymnth)) {
+                    if (stw.contains("FFEID") && stw.contains("Invalid") && mnth.contentEquals(mymnth)) {
                     counter += 1;
 
                 }

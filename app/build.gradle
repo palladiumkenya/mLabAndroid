@@ -9,12 +9,12 @@ android {
             storePassword 'mhealth'
         }
     }
-    compileSdkVersion 30
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
     defaultConfig {
 
         applicationId "com.mhealth.mLab"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 32
         versionCode 36
         versionName "2.0"
@@ -38,13 +38,16 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    //implementation 'com.google.android.gms:play-services-maps:17.0.1'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation files('libs/android-viewbadger.jar')
     implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
+//    implementation
+
+
+    'com.google.android.material:material:1.6.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.github.kimkevin:cachepot:1.1.0'
     implementation 'me.leolin:ShortcutBadger:1.1.11'
@@ -52,18 +55,18 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
     implementation 'androidx.browser:browser:1.4.0'
     implementation 'com.github.satyan:sugar:1.5'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     implementation files('libs/erbtsdk.jar')
     implementation 'com.facebook.stetho:stetho:1.5.0'
     implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
     //    start sms retriever api implementation
-    implementation 'com.google.android.gms:play-services-base:17.6.0'
-    implementation 'com.google.android.gms:play-services-identity:17.0.0'
-    implementation 'com.google.android.gms:play-services-auth:19.0.0'
-    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
     //    end sms retriever api implementation
-    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.github.f0ris.sweetalert:library:1.5.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'com.google.code.gson:gson:2.8.6'
@@ -71,7 +74,7 @@ dependencies {
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
     implementation 'com.android.support:multidex:1.0.3'
     //google maps dependency
-    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
     //cool circle
     implementation 'io.github.florent37:shapeofview:1.4.7'
     // Java language implementation

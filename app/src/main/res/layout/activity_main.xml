@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             app:tabMode="scrollable"
             app:tabTextColor="@color/white"
-            app:tabBackground="@drawable/tab_colour_selector"
+            app:tabBackground="@color/white"
             app:tabGravity="fill"/>
 
 

@@ -1,22 +1,28 @@
 <component name="libraryTable">
   <library name="Gradle: com.weiwangcn.betterspinner:library-material:1.1.0@aar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/res" />
+      <root url="file://$USER_HOME$/TutorialCodes/gradle/caches/transforms-2/files-2.1/7ae3ac3d4cdd464d1def9fbd33f775ae/jetified-library-material-1.1.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bb93a4290281240f028fce4982fd633/jetified-library-material-1.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bb93a4290281240f028fce4982fd633/jetified-library-material-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4bb93a4290281240f028fce4982fd633/jetified-library-material-1.1.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6fad9ef5be02ba591d06b812ce6a328/jetified-library-material-1.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6fad9ef5be02ba591d06b812ce6a328/jetified-library-material-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e6fad9ef5be02ba591d06b812ce6a328/jetified-library-material-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13c8632cc3c3dd232ad664c53e5404ba/jetified-library-material-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13c8632cc3c3dd232ad664c53e5404ba/jetified-library-material-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13c8632cc3c3dd232ad664c53e5404ba/jetified-library-material-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cedd77ee59bd33e63a62423f425d0455/jetified-library-material-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cedd77ee59bd33e63a62423f425d0455/jetified-library-material-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cedd77ee59bd33e63a62423f425d0455/jetified-library-material-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/678bb48e253bdd94a9f4136e49f958c19eeeed44/library-material-1.1.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/TutorialCodes/gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/678bb48e253bdd94a9f4136e49f958c19eeeed44/library-material-1.1.0-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/678bb48e253bdd94a9f4136e49f958c19eeeed44/library-material-1.1.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../TutorialCodes/gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/85e67e0fc16a89000824c7e06e27e3411ccf462c/library-material-1.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/TutorialCodes/gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/85e67e0fc16a89000824c7e06e27e3411ccf462c/library-material-1.1.0-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library-material/1.1.0/85e67e0fc16a89000824c7e06e27e3411ccf462c/library-material-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>

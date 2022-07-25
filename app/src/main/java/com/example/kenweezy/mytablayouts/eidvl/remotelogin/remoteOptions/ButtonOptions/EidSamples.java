@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.example.kenweezy.mytablayouts.AccessServer.AccessServer;
 import com.example.kenweezy.mytablayouts.Config.Config;
 import com.example.kenweezy.mytablayouts.DateTimePicker.DateTimePicker;
+import com.example.kenweezy.mytablayouts.HttpsTrustManager;
 import com.example.kenweezy.mytablayouts.R;
 //import com.example.kenweezy.mytablayouts.SSLTrustCertificate.SSLTrust;
 import com.example.kenweezy.mytablayouts.UsersTable;
@@ -50,6 +51,7 @@ public class EidSamples extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vleid_sample_remote_login_eid);
+        HttpsTrustManager.allowAllSSL();
         dob = (EditText)findViewById(R.id.eidsampledob);
         dob.setInputType(InputType.TYPE_NULL);
         labName = findViewById(R.id.labNameTextView);
