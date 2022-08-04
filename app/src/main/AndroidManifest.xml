@@ -23,7 +23,10 @@
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme"
         tools:replace="android:icon">
-        <activity android:name=".SelectBatch"></activity>
+        <activity
+            android:name=".SelectUrl"
+            android:exported="false" />
+        <activity android:name=".SelectBatch" />
         <activity android:name=".eidvl.remotelogin.remoteOptions.ButtonOptions.SampleTransportationStatus" />
         <activity android:name=".eidvl.remotelogin.remoteOptions.ButtonOptions.CheckRejectedSamples" />
         <!--
@@ -137,9 +140,9 @@
         <activity
             android:name=".Mylogin"
             android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
