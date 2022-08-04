@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mLabAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/mLabAndroid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mLabAndroid.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mlab_url3.iml" filepath="$PROJECT_DIR$/.idea/modules/mlab_url3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url3.app.unitTest.iml" />
     </modules>
   </component>
 </project>

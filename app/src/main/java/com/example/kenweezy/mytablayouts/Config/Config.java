@@ -56,16 +56,16 @@ public class Config {
     public static final String[] SPINNERLISTSAMPLETYPE = {"Frozen plasma","Venous blood(EDTA)","DBS capillary(infants only)","DBS venous","PPT"};
 
 
-    //public static final String EIDVL_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/remote/login/all";
+
     public static final String EIDVL_DATA_URL = "https://mlab.kenyahmis.org/api/remote/login/all";
-    //public static final String HTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/remote/login/hts";
+
     public static final String HTS_DATA_URL = "https://mlab.kenyahmis.org/api/remote/login/hts";
-    // public static final String RESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/get/results";
+
     public static final String RESULTS_DATA_URL = "https://mlab.kenyahmis.org/api/get/results";
-    //public static final String HISTORICALRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/historical/results";
+
     public static final String HISTORICALRESULTS_DATA_URL = "https://mlab.kenyahmis.org/api/historical/results";
 
-    //public static final String GETHTSRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/hts_results";
+
     public static final String GETHTSRESULTS_DATA_URL = "https://mlab.kenyahmis.org/api/hts_results";
     public static final String GETTBRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/tb_results";
     public static final String[] CURRENTARTREGIMENCODES = {
@@ -90,7 +90,6 @@ public class Config {
             "First Line",
             "Second Line",
             };
-
 
     public static final String[] JUSTIFICATIONCODE = {
             "1=Routine VL",
