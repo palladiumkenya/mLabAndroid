@@ -52,7 +52,7 @@ public class AccessServer {
 
         pr.showProgress("Submitting data.....");
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.EIDVL_DATA_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.BASE_URL+Config.EIDVL_DATA_URL1,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -104,7 +104,7 @@ public class AccessServer {
 
         pr.showProgress("Submitting Hts data.....");
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.HTS_DATA_URL,
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.BASE_URL+Config.HTS_DATA_URL1,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -154,7 +154,7 @@ public class AccessServer {
             pr.showProgress("getting results...");
 
 
-            StringRequest stringRequest = new StringRequest(POST,Config.RESULTS_DATA_URL,
+            StringRequest stringRequest = new StringRequest(POST,Config.BASE_URL+Config.RESULTS_DATA_URL1,
                     new Response.Listener<String>() {
 
 //
@@ -293,7 +293,7 @@ public class AccessServer {
             pr.showProgress("getting hts results...");
 
 
-            StringRequest stringRequest = new StringRequest(POST,Config.GETHTSRESULTS_DATA_URL,
+            StringRequest stringRequest = new StringRequest(POST,Config.BASE_URL+Config.GETHTSRESULTS_DATA_URL1,
                     new Response.Listener<String>() {
 
                         //
@@ -434,7 +434,7 @@ public class AccessServer {
             pr.showProgress("getting historical results...");
 
 
-            StringRequest stringRequest = new StringRequest(POST,Config.HISTORICALRESULTS_DATA_URL,
+            StringRequest stringRequest = new StringRequest(POST,Config.BASE_URL+Config.HISTORICALRESULTS_DATA_URL1,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
