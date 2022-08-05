@@ -79,6 +79,8 @@ public class Mylogin extends AppCompatActivity {
     SendMessage sm;
     Base64Encoder encoder;
 
+    TextView connect;
+
 
     private void initialise() {
 
@@ -90,6 +92,13 @@ public class Mylogin extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mylogin);
+
+        connect =findViewById(R.id.connected_to);
+        // selekt =findViewById(R.id.select_server);
+
+        //connect.setText("You are connected to" + " " + Config.STAGE_NAME + " " + "server");
+        connect.setText(Config.STAGE_NAME);
+        connect.setTextColor(Color.parseColor("#F32013"));
 
         myPackageName = getApplicationContext().getPackageName();
         initialise();

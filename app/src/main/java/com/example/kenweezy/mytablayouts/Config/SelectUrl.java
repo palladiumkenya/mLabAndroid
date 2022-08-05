@@ -74,7 +74,7 @@ public class SelectUrl extends AppCompatActivity {
                     Toast.makeText(SelectUrl.this, "Invalid", Toast.LENGTH_LONG).show();
                 }else {
                     //Toast.makeText(SelectUrls.this, getValue, Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(SelectUrl.this, Mylogin.class);
+                    Intent intent = new Intent(SelectUrl.this, Config.class);
                     intent.putExtra("url", getValue);
                     intent.putExtra("stage_key", stage_name);
                     startActivity(intent);
@@ -134,14 +134,14 @@ public class SelectUrl extends AppCompatActivity {
                         public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                             dataId = names.get(position).getId();
 
-                            if (dataId==1){
+                            if (dataId==3){
 
                                 base_url = names.get(position).getUrl();
 
                                 stage_name =names.get(position).getStage();
 
                             }
-                            else if(dataId==2){
+                            else if(dataId==4){
 
                                 base_url = names.get(position).getUrl();
                                 stage_name =names.get(position).getStage();
