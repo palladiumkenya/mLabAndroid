@@ -19,6 +19,9 @@
         <item name="android:windowDisablePreview">true</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="AccTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
