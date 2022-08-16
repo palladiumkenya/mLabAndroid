@@ -166,7 +166,9 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
         b.setNeutralButton("YES", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 
-                finish();
+                //finish();
+                Intent intent = new Intent(MyRegister.this, Mylogin.class);
+                startActivity(intent);
 
 
             }
@@ -271,8 +273,8 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
 
                 UsersTable ut = new UsersTable(myun, mypass, selectedQuestion, ans,myphone);
                 ut.save();
-                CheckRun cr = new CheckRun("runned");
-                cr.save();
+                //CheckRun cr = new CheckRun("runned");
+                //cr.save();
                 pr.DissmissProgress();
 
                 RegistrationConf("Choose Your Action ?", "REGISTRATION SUCCESSFUL");
@@ -303,8 +305,8 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
-                finish();
-                dialog.cancel();
+                //finish();
+               // dialog.cancel();
             }
         });
 

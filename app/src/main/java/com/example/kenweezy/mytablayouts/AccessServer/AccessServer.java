@@ -12,7 +12,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.kenweezy.mytablayouts.Config.Config;
 import com.example.kenweezy.mytablayouts.Dialogs.Dialog;
-import com.example.kenweezy.mytablayouts.HttpsTrustManager;
 import com.example.kenweezy.mytablayouts.ProcessReceivedMessage.ProcessMessage;
 import com.example.kenweezy.mytablayouts.Progressing.Progress;
 import com.example.kenweezy.mytablayouts.encryption.Base64Encoder;
@@ -39,7 +38,7 @@ public class AccessServer {
 
     public AccessServer(Context ctx) {
         this.ctx = ctx;
-        HttpsTrustManager.allowAllSSL();
+       // HttpsTrustManager.allowAllSSL();
 
         pr = new Progress(ctx);
         sweetdialog = new Dialog(ctx);
@@ -48,7 +47,7 @@ public class AccessServer {
 
 
     public void submitEidVlData(final String phone,final String message) {
-        HttpsTrustManager.allowAllSSL();
+       // HttpsTrustManager.allowAllSSL();
 
         pr.showProgress("Submitting data.....");
 
@@ -100,7 +99,7 @@ public class AccessServer {
 
 
     public void submitHtsData(final String phone,final String message) {
-        HttpsTrustManager.allowAllSSL();
+        //HttpsTrustManager.allowAllSSL();
 
         pr.showProgress("Submitting Hts data.....");
 

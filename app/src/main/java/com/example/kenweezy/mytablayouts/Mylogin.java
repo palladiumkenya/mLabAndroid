@@ -79,7 +79,7 @@ public class Mylogin extends AppCompatActivity {
     SendMessage sm;
     Base64Encoder encoder;
 
-    TextView connect;
+    TextView connect, no_account;
 
 
     private void initialise() {
@@ -94,6 +94,7 @@ public class Mylogin extends AppCompatActivity {
         setContentView(R.layout.mylogin);
 
         connect =findViewById(R.id.connected_to);
+        no_account = findViewById(R.id.register_btn);
         // selekt =findViewById(R.id.select_server);
 
         //connect.setText("You are connected to" + " " + Config.STAGE_NAME + " " + "server");
@@ -102,6 +103,14 @@ public class Mylogin extends AppCompatActivity {
 
         myPackageName = getApplicationContext().getPackageName();
         initialise();
+
+        no_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(Mylogin.this, MyRegister.class);
+                startActivity(intent1);
+            }
+        });
 
 //        checkMessageCount();
 
@@ -143,7 +152,7 @@ public class Mylogin extends AppCompatActivity {
         try {
 
             /**************************************checking user interaction for first time*/
-            long now = new Date().getTime();
+           /* long now = new Date().getTime();
             List<UserTimeOut> ml = UserTimeOut.findWithQuery(UserTimeOut.class, "Select * from User_time_out");
             if (ml.size() == 0) {
                 UserTimeOut ut = new UserTimeOut(Long.toString(now));
@@ -155,7 +164,7 @@ public class Mylogin extends AppCompatActivity {
                 myut.save();
 
 
-            }
+            }*/
 //            Toast.makeText(this, "user interacted at "+now, Toast.LENGTH_SHORT).show();
 
             /**************************************checking user interaction for first time*/
@@ -163,24 +172,25 @@ public class Mylogin extends AppCompatActivity {
 
             List<CheckRun> myl2 = CheckRun.findWithQuery(CheckRun.class, "Select * from Check_run");
 
-            if (myl2.size() == 0) {
+           // if (myl2.size() == 0) {
 
 
 //                Toast.makeText(this, "first run", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(getApplicationContext(), MyRegister.class);
+                //Intent i = new Intent(getApplicationContext(), MyRegister.class);
                 // Closing all the Activities
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+               /* i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
-                finish();
+                finish();*/
 
 
-            } else {
+           // }
+           // else {
 
-                for (int y = 0; y < myl2.size(); y++) {
+               // for (int y = 0; y < myl2.size(); y++) {
 //                    Toast.makeText(this, ""+myl2.get(y).getFirstRun(), Toast.LENGTH_SHORT).show();
-                }
+               // }
 
 //                Toast.makeText(this, "second run", Toast.LENGTH_SHORT).show();
 
@@ -215,8 +225,9 @@ public class Mylogin extends AppCompatActivity {
                 });
 
 
-            }
-        } catch (Exception e) {
+          //  }
+        }
+        catch (Exception e) {
 
             Toast.makeText(this, "error checking run " + e, Toast.LENGTH_SHORT).show();
             System.out.println(" error occured checking run " + e);
@@ -321,12 +332,12 @@ public class Mylogin extends AppCompatActivity {
         }
     }
 
-    @Override
+   /* @Override
     public void onUserInteraction() {
         super.onUserInteraction();
 
         /**************************************checking user interaction for first time*/
-        long now = new Date().getTime();
+       /* long now = new Date().getTime();
         List<UserTimeOut> ml = UserTimeOut.findWithQuery(UserTimeOut.class, "Select * from User_time_out");
         if (ml.size() == 0) {
             UserTimeOut ut = new UserTimeOut(Long.toString(now));
@@ -337,9 +348,9 @@ public class Mylogin extends AppCompatActivity {
             myut.lasttime = Long.toString(now);
             myut.save();
         }
-    }
+    }*/
 
-    @Override
+   /* @Override
     protected void onStop() {
         super.onStop();
 
@@ -358,7 +369,7 @@ public class Mylogin extends AppCompatActivity {
 
 
         }
-    }
+    }*/
 
 
     public void LoginUser(View v) {

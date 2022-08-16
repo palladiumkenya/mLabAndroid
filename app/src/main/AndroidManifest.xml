@@ -23,9 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme"
         tools:replace="android:icon">
-        <activity
+       <!-- <activity
             android:name=".Config.SelectUrl"
-            android:exported="false" />
+            android:exported="false" />-->
 
         <activity
             android:name=".Config.Config"
@@ -142,7 +142,7 @@
             android:parentActivityName=".Mylogin"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Mylogin"
+            android:name=".Config.SelectUrl"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:exported="true"
             android:label="@string/app_name"
@@ -153,7 +153,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- start sms retriever details here -->
+        </activity>
+
+        <activity
+            android:name=".Mylogin"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AccTheme"
+            />
+       <!-- <activity
+            android:name=".Config.SelectUrl"
+            android:exported="false" />-->
+
+
+
+
+        <!-- start sms retriever details here -->
         <service android:name=".Smsretrieverapi.BackgroundService" />
 
         <activity android:name=".Smsretrieverapi.TestClass">

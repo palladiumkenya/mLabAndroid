@@ -17,14 +17,12 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.kenweezy.mytablayouts.Config.Config;
-import com.example.kenweezy.mytablayouts.HttpsTrustManager;
 import com.example.kenweezy.mytablayouts.R;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.CheckRejectedSamples;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.EidSamples;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.SampleTransportation;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.SampleTransportationStatus;
 import com.example.kenweezy.mytablayouts.eidvl.remotelogin.remoteOptions.ButtonOptions.ViralLoadSamples;
-import com.google.android.material.snackbar.Snackbar;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
 public class VleidSampleRemoteLogin extends AppCompatActivity {
@@ -38,7 +36,7 @@ public class VleidSampleRemoteLogin extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vleid_sample_remote_login);
-        HttpsTrustManager.allowAllSSL();
+        //HttpsTrustManager.allowAllSSL();
         setToolBar();
         changeStatusBarColor("#3F51B5");
         initialise();
