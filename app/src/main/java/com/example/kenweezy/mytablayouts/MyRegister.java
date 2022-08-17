@@ -152,8 +152,8 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
 
         AlertDialog.Builder b = new AlertDialog.Builder(this);
 
-        b.setMessage("Are you sure you want to exit mLab?");
-        b.setTitle("exit mLab");
+        b.setMessage("Get back");
+        b.setTitle("Exit mLab");
         b.setIcon(android.R.drawable.ic_dialog_alert);
         b.setCancelable(false);
 
@@ -273,8 +273,8 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
 
                 UsersTable ut = new UsersTable(myun, mypass, selectedQuestion, ans,myphone);
                 ut.save();
-                //CheckRun cr = new CheckRun("runned");
-                //cr.save();
+                CheckRun cr = new CheckRun("runned");
+                cr.save();
                 pr.DissmissProgress();
 
                 RegistrationConf("Choose Your Action ?", "REGISTRATION SUCCESSFUL");
@@ -305,8 +305,8 @@ public class MyRegister extends AppCompatActivity implements AdapterView.OnItemS
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
-                //finish();
-               // dialog.cancel();
+                finish();
+                dialog.cancel();
             }
         });
 

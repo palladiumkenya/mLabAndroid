@@ -38,7 +38,7 @@ public class AccessServer {
 
     public AccessServer(Context ctx) {
         this.ctx = ctx;
-       // HttpsTrustManager.allowAllSSL();
+        //HttpsTrustManager.allowAllSSL();
 
         pr = new Progress(ctx);
         sweetdialog = new Dialog(ctx);
@@ -47,7 +47,7 @@ public class AccessServer {
 
 
     public void submitEidVlData(final String phone,final String message) {
-       // HttpsTrustManager.allowAllSSL();
+        //HttpsTrustManager.allowAllSSL();
 
         pr.showProgress("Submitting data.....");
 
@@ -56,16 +56,16 @@ public class AccessServer {
                     @Override
                     public void onResponse(String response) {
 
-                            pr.dissmissProgress();
-                            System.out.println("****response ***");
-                            System.out.println(response);
+                        pr.dissmissProgress();
+                        System.out.println("****response ***");
+                        System.out.println(response);
 
-                            if(response.contains("Phone Number not Authorised to send remote samples")){
-                                sweetdialog.showErrorDialog("Phone Number not Authorised to send remote samples", "Error");
-                            } else {
-                               // sweetdialog.showSuccessDialog("Sample Remote Login Completed Succesfully", "SUCCESS"+response);
-                                sweetdialog.showSuccessDialog("Sample Remote Login Completed Succesfully", response);
-                            }
+                        if(response.contains("Phone Number not Authorised to send remote samples")){
+                            sweetdialog.showErrorDialog("Phone Number not Authorised to send remote samples", "Error");
+                        } else {
+                            // sweetdialog.showSuccessDialog("Sample Remote Login Completed Succesfully", "SUCCESS"+response);
+                            sweetdialog.showSuccessDialog("Sample Remote Login Completed Succesfully", response);
+                        }
 
                     }
                 },
@@ -99,7 +99,7 @@ public class AccessServer {
 
 
     public void submitHtsData(final String phone,final String message) {
-        //HttpsTrustManager.allowAllSSL();
+       // HttpsTrustManager.allowAllSSL();
 
         pr.showProgress("Submitting Hts data.....");
 
@@ -156,7 +156,7 @@ public class AccessServer {
             StringRequest stringRequest = new StringRequest(POST,Config.BASE_URL+Config.RESULTS_DATA_URL1,
                     new Response.Listener<String>() {
 
-//
+                        //
                         @Override
                         public void onResponse(String response) {
 //                            pd.dismissDialog();
@@ -562,5 +562,4 @@ public class AccessServer {
 
 
     }
-
 }

@@ -135,9 +135,15 @@ public class Config extends AppCompatActivity {
     };
 
     @Override
+    public void onBackPressed() {
+        finishAffinity();
+            }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_config);
+
 
         TextView x =findViewById(R.id.show);
         //Button xx =findViewById(R.id.show1);
@@ -167,7 +173,7 @@ public class Config extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
-                        Intent intent = new Intent(Config.this, Mylogin.class);
+                        Intent intent = new Intent(Config.this, MyRegister.class);
                         startActivity(intent);
 
                         //dialog.cancel();

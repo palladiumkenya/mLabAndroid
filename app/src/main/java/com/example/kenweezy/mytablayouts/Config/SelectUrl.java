@@ -3,11 +3,19 @@ package com.example.kenweezy.mytablayouts.Config;
 import static android.R.layout.simple_spinner_item;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +33,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.kenweezy.mytablayouts.Mylogin;
 import com.example.kenweezy.mytablayouts.R;
 import com.example.kenweezy.mytablayouts.models.urlModel;
+import com.google.android.material.snackbar.Snackbar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,19 +53,42 @@ public class SelectUrl extends AppCompatActivity {
     String stage_name;
     SharedPreferences sharedPreferences1;
     Button btn_prcd;
+    RequestPerms requestPerms;
+    private static final int PERMS_REQUEST_CODE = 12345;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_url);
+        //setScreen();
 
-        SharedPreferences sharedPreferences = getSharedPreferences("Settings", Context.MODE_PRIVATE);
+        requestPerms = new RequestPerms(SelectUrl.this, this);
+
+
+        requestNewPerms();
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                if (!isConnected(SelectUrl.this)){
+                    //Toast.makeText(LoginActivity.this, "Please connect to internet", Toast.LENGTH_LONG).show();
+                    Snackbar.make(findViewById(R.id.lay), "Please connect to internet", Snackbar.LENGTH_LONG).show();
+                }else{
+                    geturls1();
+                }
+            }
+        });
+        //setScreen();
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences("Settings_url", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         btn_prcd = findViewById(R.id.login_proceed);
         spinner1 =findViewById(R.id.spCompany);
-        geturls1();
+
+       // geturls1();
 
 
         btn_prcd.setOnClickListener(new View.OnClickListener() {
@@ -84,8 +116,10 @@ public class SelectUrl extends AppCompatActivity {
 
             }
         });
+
     }
     public void geturls1(){
+
         String URLstring = "https://ushaurinode.mhealthkenya.co.ke/config";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, URLstring, null, new Response.Listener<JSONObject>() {
             @Override
@@ -173,4 +207,96 @@ public class SelectUrl extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(SelectUrl.this);
         requestQueue.add(jsonObjectRequest);
     }
+
+    private void setScreen(){
+        SharedPreferences preferencesS =getSharedPreferences("PREFERENCE", MODE_PRIVATE);
+
+        String FirstTime =preferencesS.getString("FirstTimeInstall", "");
+
+        if (FirstTime.equals("Yes")){
+            Intent intent1 =new Intent(SelectUrl.this, Mylogin.class);
+            startActivity(intent1);
+
+        }else{
+            SharedPreferences.Editor editor =preferencesS.edit();
+            editor.putString("FirstTimeInstall", "Yes");
+            editor.apply();
+        }
+    }
+      private  boolean isConnected(Context context){
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo wifiInfo = connectivityManager.getNetworkInfo(connectivityManager.TYPE_WIFI);
+        NetworkInfo mobileInfo =connectivityManager.getNetworkInfo(connectivityManager.TYPE_MOBILE);
+
+        if((wifiInfo !=null && wifiInfo.isConnected())|| (mobileInfo !=null && mobileInfo.isConnected())){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
+    public void requestNewPerms() {
+
+        try {
+            requestPerms.requestPerms();
+
+        } catch (Exception e) {
+            Toast.makeText(this, "error in granting permissions " + e, Toast.LENGTH_SHORT).show();
+
+
+        }
+    }
+
+    private boolean hasPermissions() {
+
+        int res = 0;
+
+        String[] permissions = new String[]{
+                Manifest.permission.INTERNET,
+//                android.Manifest.permission.READ_SMS,
+//                android.Manifest.permission.RECEIVE_SMS,
+//                android.Manifest.permission.CALL_PHONE
+
+
+        };
+
+        for (String perms : permissions) {
+            res = checkCallingOrSelfPermission(perms);
+
+            if (!(res == PackageManager.PERMISSION_GRANTED)) {
+                return false;
+            }
+
+        }
+        return true;
+
+
+    }
+
+
+private void requestPerms() {
+
+        String[] permissions = new String[]{
+                Manifest.permission.INTERNET,
+//                android.Manifest.permission.SEND_SMS,
+//                android.Manifest.permission.READ_SMS,
+//                android.Manifest.permission.RECEIVE_SMS,
+        };
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(permissions, PERMS_REQUEST_CODE);
+
+
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                    getApplicationContext());
+            builder.setAutoCancel(true);
+
+        }
+
+    }
+
+
 }

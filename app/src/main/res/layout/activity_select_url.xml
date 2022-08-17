@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:id="@+id/lay"
     android:background="#FFFFFF"
     tools:context=".Config.SelectUrl">
 
@@ -31,7 +32,7 @@
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"
-
+        android:gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="Select the baseURL to connect to"/>
@@ -49,7 +50,7 @@
         android:id="@+id/login_proceed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/blue_button_background"
+        android:background="#000050"
         android:textColor="#FFFFFF"
         android:textAllCaps="true"
         android:layout_marginLeft="25dp"

@@ -79,6 +79,9 @@ public class Options extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.options);
+
+       //
+        // Toast.makeText(this, Config.BASE_URL, Toast.LENGTH_LONG).show();
 //        tb=(Toolbar) findViewById(R.id.toolbar2);
 //        tb.setTitleTextColor(Color.parseColor("#f2f2f2"));
 //        setSupportActionBar(tb);

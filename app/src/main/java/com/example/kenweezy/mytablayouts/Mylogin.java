@@ -89,9 +89,16 @@ public class Mylogin extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        finishAffinity();
+            }
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mylogin);
+
+
 
         connect =findViewById(R.id.connected_to);
         no_account = findViewById(R.id.register_btn);
@@ -152,7 +159,7 @@ public class Mylogin extends AppCompatActivity {
         try {
 
             /**************************************checking user interaction for first time*/
-           /* long now = new Date().getTime();
+            long now = new Date().getTime();
             List<UserTimeOut> ml = UserTimeOut.findWithQuery(UserTimeOut.class, "Select * from User_time_out");
             if (ml.size() == 0) {
                 UserTimeOut ut = new UserTimeOut(Long.toString(now));
@@ -164,7 +171,7 @@ public class Mylogin extends AppCompatActivity {
                 myut.save();
 
 
-            }*/
+            }
 //            Toast.makeText(this, "user interacted at "+now, Toast.LENGTH_SHORT).show();
 
             /**************************************checking user interaction for first time*/
@@ -172,25 +179,25 @@ public class Mylogin extends AppCompatActivity {
 
             List<CheckRun> myl2 = CheckRun.findWithQuery(CheckRun.class, "Select * from Check_run");
 
-           // if (myl2.size() == 0) {
+            if (myl2.size() == 0) {
 
 
 //                Toast.makeText(this, "first run", Toast.LENGTH_SHORT).show();
-                //Intent i = new Intent(getApplicationContext(), MyRegister.class);
+                Intent i = new Intent(getApplicationContext(), SelectUrl.class);
                 // Closing all the Activities
-               /* i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
-                finish();*/
+                finish();
 
 
-           // }
-           // else {
+            }
+            else {
 
-               // for (int y = 0; y < myl2.size(); y++) {
+                for (int y = 0; y < myl2.size(); y++) {
 //                    Toast.makeText(this, ""+myl2.get(y).getFirstRun(), Toast.LENGTH_SHORT).show();
-               // }
+                }
 
 //                Toast.makeText(this, "second run", Toast.LENGTH_SHORT).show();
 
@@ -225,7 +232,7 @@ public class Mylogin extends AppCompatActivity {
                 });
 
 
-          //  }
+            }
         }
         catch (Exception e) {
 
@@ -332,12 +339,12 @@ public class Mylogin extends AppCompatActivity {
         }
     }
 
-   /* @Override
+    @Override
     public void onUserInteraction() {
         super.onUserInteraction();
 
         /**************************************checking user interaction for first time*/
-       /* long now = new Date().getTime();
+        long now = new Date().getTime();
         List<UserTimeOut> ml = UserTimeOut.findWithQuery(UserTimeOut.class, "Select * from User_time_out");
         if (ml.size() == 0) {
             UserTimeOut ut = new UserTimeOut(Long.toString(now));
@@ -348,9 +355,9 @@ public class Mylogin extends AppCompatActivity {
             myut.lasttime = Long.toString(now);
             myut.save();
         }
-    }*/
+    }
 
-   /* @Override
+    @Override
     protected void onStop() {
         super.onStop();
 
@@ -369,7 +376,7 @@ public class Mylogin extends AppCompatActivity {
 
 
         }
-    }*/
+    }
 
 
     public void LoginUser(View v) {
@@ -388,11 +395,12 @@ public class Mylogin extends AppCompatActivity {
 
     private Boolean exit = false;
 
-    @Override
+   /* @Override
     public void onBackPressed() {
+    finishAffinity();
 
 
-        AlertDialog.Builder b = new AlertDialog.Builder(this);
+        /*AlertDialog.Builder b = new AlertDialog.Builder(this);
 
         b.setMessage("Are you sure you want to exit mLab?");
         b.setTitle("exit mLab");
@@ -407,7 +415,7 @@ public class Mylogin extends AppCompatActivity {
 
         b.setNeutralButton("YES", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-
+                finishAffinity();
                 finish();
 
 
@@ -421,7 +429,7 @@ public class Mylogin extends AppCompatActivity {
         Button bq = a.getButton(DialogInterface.BUTTON_NEGATIVE);
         Button bn = a.getButton(DialogInterface.BUTTON_NEUTRAL);
         bq.setTextColor(Color.RED);
-        bn.setTextColor(Color.BLUE);
+        bn.setTextColor(Color.BLUE);*/
 
 
 //        new AlertDialog.Builder(this)
@@ -438,7 +446,7 @@ public class Mylogin extends AppCompatActivity {
 //                })
 //                .setNegativeButton("No", null)
 //                .show();
-    }
+   // }
 
     public boolean MydialogBuilder(final String message, final String title) {
         final boolean[] exiting = {false};
@@ -815,7 +823,7 @@ public class Mylogin extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         
-        getMenuInflater().inflate(R.menu.main_urls, menu);
+       // getMenuInflater().inflate(R.menu.main_urls, menu);
         return true;
     }
 
