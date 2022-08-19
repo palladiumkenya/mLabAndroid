@@ -155,7 +155,7 @@ public class Config extends AppCompatActivity {
         STAGE_NAME =bundle.getString("stage_key");
         getAlert();
 
-        x.setText("You are connected to" + " " +STAGE_NAME + " " + "Server!");
+        x.setText("You are connected to" + " " +STAGE_NAME );
         //Toast.makeText(Config.this, BASE_URL, Toast.LENGTH_LONG).show();
         x.setTextColor(Color.parseColor("#F32013"));
 
@@ -165,7 +165,7 @@ public class Config extends AppCompatActivity {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(Config.this);
         builder1.setIcon(android.R.drawable.ic_dialog_alert);
         builder1.setTitle("You are connected to");
-        builder1.setMessage( STAGE_NAME + " " + "Server!");
+        builder1.setMessage( STAGE_NAME);
         builder1.setCancelable(true);
 
         builder1.setPositiveButton(

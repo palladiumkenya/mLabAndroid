@@ -9,15 +9,15 @@ android {
             storePassword 'mhealth'
         }
     }
-    compileSdkVersion 32
+    compileSdkVersion 33
     buildToolsVersion '30.0.3'
     defaultConfig {
 
         applicationId "com.mhealth.mLab"
         minSdkVersion 19
-        targetSdkVersion 32
-        versionCode 36
-        versionName "2.0"
+        targetSdkVersion 33
+        versionCode 40
+        versionName "2.3.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
@@ -38,13 +38,13 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.android.material:material:1.6.1'
     //implementation 'com.google.android.gms:play-services-maps:17.0.1'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation files('libs/android-viewbadger.jar')
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
 //    implementation
 
 
@@ -62,7 +62,7 @@ dependencies {
     implementation 'com.facebook.stetho:stetho:1.5.0'
     implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
     //    start sms retriever api implementation
-    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'com.google.android.gms:play-services-base:18.1.0'
     implementation 'com.google.android.gms:play-services-identity:18.0.1'
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
     implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
@@ -70,18 +70,18 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.github.f0ris.sweetalert:library:1.5.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.code.gson:gson:2.8.9'
 
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
     implementation 'com.android.support:multidex:1.0.3'
     //google maps dependency
-    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     //cool circle
     implementation 'io.github.florent37:shapeofview:1.4.7'
     // Java language implementation
-    implementation "androidx.fragment:fragment:1.4.1"
+    implementation "androidx.fragment:fragment:1.5.2"
     //places api for moving the marker
-    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.libraries.places:places:2.6.0'
 }
 
 //apply plugin: 'kotlin-android'

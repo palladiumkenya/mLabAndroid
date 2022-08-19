@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mlab_url2main.iml" filepath="$PROJECT_DIR$/.idea/modules/mlab_url2main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlab_url2main.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mlabplaystore.iml" filepath="$PROJECT_DIR$/.idea/modules/mlabplaystore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlabplaystore.app.unitTest.iml" />
     </modules>
   </component>
 </project>
