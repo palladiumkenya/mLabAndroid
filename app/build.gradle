@@ -15,7 +15,7 @@ android {
 
         applicationId "com.mhealth.mLab"
         minSdkVersion 16
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 36
         versionName "2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

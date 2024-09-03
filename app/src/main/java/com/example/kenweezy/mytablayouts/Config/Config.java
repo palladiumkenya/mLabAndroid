@@ -57,17 +57,19 @@ public class Config {
 
 
     //public static final String EIDVL_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/remote/login/all";
-    public static final String EIDVL_DATA_URL = "https://prod.kenyahmis.org:8085/api/remote/login/all";
+    public static final String EIDVL_DATA_URL = "https://mlabapi.kenyahmis.org/api/remote/login/all";
     //public static final String HTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/remote/login/hts";
-    public static final String HTS_DATA_URL = "https://prod.kenyahmis.org:8085/api/remote/login/hts";
+    public static final String HTS_DATA_URL = "https://mlabapi.kenyahmis.org/api/remote/login/hts";
     // public static final String RESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/get/results";
-    public static final String RESULTS_DATA_URL = "https://prod.kenyahmis.org:8085/api/get/results";
-    //public static final String HISTORICALRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/historical/results";
-    public static final String HISTORICALRESULTS_DATA_URL = "https://prod.kenyahmis.org:8085/api/historical/results";
+   // public static final String RESULTS_DATA_URL = "https://mlabapi.kenyahmis.org/api/get/results";
+    public static final String RESULTS_DATA_URL = "https://mlabapi.nascop.org/api/get/results";
+//https://mlabapi.nascop.org
+//public static final String HISTORICALRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/historical/results";
+    public static final String HISTORICALRESULTS_DATA_URL = "https://mlabapi.kenyahmis.org/api/historical/results";
 
     //public static final String GETHTSRESULTS_DATA_URL = "https://mlab.mhealthkenya.co.ke/api/hts_results";
-    public static final String GETHTSRESULTS_DATA_URL = "https://prod.kenyahmis.org:8085/api/hts_results";
-    public static final String GETTBRESULTS_DATA_URL = "https://prod.kenyahmis.org:8085/api/tb_results";
+    public static final String GETHTSRESULTS_DATA_URL = "https://mlabapi.kenyahmis.org/api/hts_results";
+    public static final String GETTBRESULTS_DATA_URL = "https://mlabapi.mhealthkenya.co.ke/api/tb_results";
     public static final String[] CURRENTARTREGIMENCODES = {
             "1= TDF+ 3TC+ EFV",
             "2=TDF+3TC+NVP",

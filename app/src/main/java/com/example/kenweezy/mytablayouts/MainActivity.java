@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements SmsReceiver.Messa
 
 //        generateAppSignature();
 
-        initiateBackgroundService();
+       // initiateBackgroundService();
 
         //sms retriever api
 
@@ -1973,19 +1973,16 @@ public class MainActivity extends AppCompatActivity implements SmsReceiver.Messa
     //    function triggered when the application is in background or closed
     private void initiateBackgroundService() {
 
-        //background code after every 5 seconds
-
-
+        // Background code after every 5 seconds
         Intent alarm = new Intent(MainActivity.this, SmsReceiver.class);
         boolean alarmRunning = (PendingIntent.getBroadcast(MainActivity.this, 0, alarm, PendingIntent.FLAG_NO_CREATE) != null);
-        if (alarmRunning == false) {
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarm, 0);
+        if (!alarmRunning) {
+            PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarm, PendingIntent.FLAG_IMMUTABLE);
             AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
             alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime(), 5000, pendingIntent);
         }
 
-        //background code
-
+        // Background code
     }
 
     //    function triggered when the actual message is received from our receiver
